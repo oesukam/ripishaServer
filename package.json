@@ -1,0 +1,37 @@
+{
+  "name": "ripishaserver",
+  "version": "1.0.0",
+  "description": "Ripisha DRC Online Payment Server",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "./node_modules/.bin/nodemon --ignore test/ "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oesukam/ripishaServer.git"
+  },
+  "keywords": [
+    "ripisha",
+    "drc",
+    "rdc",
+    "congo",
+    "payment",
+    "achat",
+    "online"
+  ],
+  "author": "Olivier Esuka <oesukam@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oesukam/ripishaServer/issues"
+  },
+  "homepage": "https://github.com/oesukam/ripishaServer#readme",
+  "dependencies": {
+    "hapi": "^17.2.0",
+    "nodemon": "^1.14.6"
+  },
+  "devDependencies": {
+    "eslint": "^4.14.0",
+    "jest": "^22.0.4"
+  }
+}
