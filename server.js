@@ -1,6 +1,6 @@
 'use strict';
-
 const Hapi = require('hapi');
+const routes = require('./routes');
 
 // Create a server with a host and port
 const server = Hapi.server({ 
@@ -9,13 +9,7 @@ const server = Hapi.server({
 });
 
 // Add the route
-server.route({
-  method: 'GET',
-  path:'/', 
-  handler: function (request, h) {
-  return 'Ripisha Server';
-  }
-});
+server.route(routes);
 
 // Start the server
 async function start() {
